@@ -1,0 +1,10 @@
+{
+    "cucumberautocomplete.steps": [
+        "features/step_definitions/*.js"
+        , "features/step_definitions/preflight/*.js"
+        , "features/step_definitions/postflight/*.js"
+        , "features/step_definitions/profile/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/tests/profile/*.feature",
+    "cucumberautocomplete.strictGherkinCompletion": true
+}
