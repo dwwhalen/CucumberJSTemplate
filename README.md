@@ -13,7 +13,7 @@ This project is for Cucumber/Protractor tests in JavaScript for Scheduler, postf
 	```$ npm run webdriver-update```
 
 #run everything
-	npm run e2e
+	npm run e2e -- --cucumberOpts.tags=@le
 
 #Login	
 	npm run e2e -- --cucumberOpts.tags=@login --disableChecks
@@ -31,6 +31,6 @@ This project is for Cucumber/Protractor tests in JavaScript for Scheduler, postf
 	npm run e2e -- --cucumberOpts.tags=@preflight --disableChecks
 	protractor --specs features/tests/preflight/preflightAircraftEvents.feature
 
-#Postflight
-	npm run e2e -- --cucumberOpts.tags=@postflight --disableChecks
-	protractor --specs features/tests/postflight/postflightTripManager.feature
+#Leading EDJE
+	npm run e2e -- --cucumberOpts.tags=@le
+	protractor --specs features/tests/leading_edje.feature

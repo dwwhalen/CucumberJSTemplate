@@ -17,10 +17,11 @@ exports.config = {
   framework: 'custom',  // set to "custom" instead of cucumber.
   frameworkPath: require.resolve('protractor-cucumber-framework'),  // path relative to the current config file
   specs: [
-    './features/tests/login/*.feature',
-    './features/tests/postflight/*.feature',
-    './features/tests/preflight/*.feature',
-    './features/tests/profile/*.feature',
+    './features/tests/*.feature',
+    // './features/tests/login/*.feature',
+    // './features/tests/postflight/*.feature',
+    // './features/tests/preflight/*.feature',
+    // './features/tests/profile/*.feature',
   ],
   cucumberOpts: {
     require: [
@@ -47,7 +48,8 @@ getPageTimeout: 30000,
 allScriptsTimeout: 30000,
 ignoreUncaughtExceptions: true,
 plugins: [{
-   package: 'protractor-multiple-cucumber-html-reporter-plugin',
+  package: require.resolve('protractor-multiple-cucumber-html-reporter-plugin'),
+  //  package: 'protractor-multiple-cucumber-html-reporter-plugin',
    options:{
 		automaticallyGenerateReport: true,
         removeExistingJsonReportFile: true,
