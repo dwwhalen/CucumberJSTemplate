@@ -12,6 +12,19 @@ exports.config = {
       maxInstances: 1,
       chromeOptions: {
             args: ['disable-infobars']
+            // args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
+      },
+      // Add this
+      metadata: {
+        browser: {
+            name: 'chrome',
+            version: '58'
+        },
+        device: 'Dell Precision 5510',
+        platform: {
+            name: 'Windows 10 Pro',
+            version: '1803'
+        }
       }
   },
   framework: 'custom',  // set to "custom" instead of cucumber.
@@ -57,10 +70,10 @@ plugins: [{
 		customData: {
 		title: 'Run info',
 		data: [
-			{label: 'Project', value: 'Cucumber Tests for SD Scheduler'},
+			{label: 'Project', value: 'JavaScript and CucumberJS tests'},
 			{label: 'Release', value: '1.0.0'}
 		]
 		}
    }
   }]
-};
+}
