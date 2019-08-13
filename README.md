@@ -1,5 +1,5 @@
 # Introduction
-This project is for Cucumber/Protractor tests in JavaScript for Scheduler, postflight, preflight, and profile.
+This project is for Cucumber/Protractor tests in JavaScript.
 
 # Getting Started
 1. Make sure protractor is installed, otherwise run:
@@ -8,18 +8,26 @@ This project is for Cucumber/Protractor tests in JavaScript for Scheduler, postf
 
 2. Open terminal session and navigate to the project to install dependencies
 
-	```$ cd ...*/SD.Scheduler.UI.CucumberProtractor```
 	```$ npm install```
+
+3. Install slenium
+
 	```$ npm run webdriver-update```
 
-#run everything
-	npm run e2e -- --cucumberOpts.tags=@le
+4. Start Selenium
 
-#Login	
+	```$ webdriver-manager start```
+
+#Leading EDJE
+	npm run e2e -- --cucumberOpts.tags=@le
+	protractor --cucumberOpts.tags=@le
+
+# OLD - no longer valid 
+## Login - no longer valid
 	npm run e2e -- --cucumberOpts.tags=@login --disableChecks
 	protractor --specs features/tests/login/login.feature
 
-#Profile
+## Profile - no longer valid
 	npm run e2e -- --cucumberOpts.tags=@profile --disableChecks
 	protractor --specs features/tests/profile/profileAircraft.feature
 	protractor --specs features/tests/profile/profileCompany.feature
@@ -27,10 +35,6 @@ This project is for Cucumber/Protractor tests in JavaScript for Scheduler, postf
 	protractor --specs features/tests/profile/profileRolesManagement.feature
 	protractor --specs features/tests/profile/profileAirport.feature
 
-#Preflight
+## Preflight - no longer valid
 	npm run e2e -- --cucumberOpts.tags=@preflight --disableChecks
 	protractor --specs features/tests/preflight/preflightAircraftEvents.feature
-
-#Leading EDJE
-	npm run e2e -- --cucumberOpts.tags=@le
-	protractor --specs features/tests/leading_edje.feature

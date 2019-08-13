@@ -3,28 +3,15 @@ Basic configuration to run your cucumber
 feature files and step definitions with protractor.
 **/
 exports.config = {
-  //seleniumAddress: 'http://localhost:4444/wd/hub',
- // baseUrl: 'http://sd-preflight.pub.sddev.local/schedule/554',
- directConnect: true,
+seleniumAddress: 'http://localhost:4444/wd/hub',
+ directConnect: false,
  capabilities: {
       browserName:'chrome',
 	    shardTestFiles: false,
       maxInstances: 1,
       chromeOptions: {
-            args: ['disable-infobars']
-            // args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
-      },
-      // Add this
-      metadata: {
-        browser: {
-            name: 'chrome',
-            version: '58'
-        },
-        device: 'Dell Precision 5510',
-        platform: {
-            name: 'Windows 10 Pro',
-            version: '1803'
-        }
+            // args: ['disable-infobars']
+            args: [ "--headless", "--disable-gpu", "--window-size=800,600" ]
       }
   },
   framework: 'custom',  // set to "custom" instead of cucumber.
