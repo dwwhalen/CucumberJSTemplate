@@ -23,7 +23,7 @@
     "webdriver-manager": "^12.0.6"
   },
   "dependencies": {
-    "angular": "^1.6.6",
+    "angular": "^1.7.9",
     "angular-route": "1.5.x",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
