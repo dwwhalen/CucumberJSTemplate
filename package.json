@@ -27,6 +27,6 @@
     "angular-route": "1.5.x",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
-    "http-server": "^0.10.0"
+    "http-server": "^14.1.1"
   }
 }
